@@ -18,7 +18,7 @@ pipeline{
         }
         stage('Package Jar'){
             steps{
-                bat cfm 'jar cfm Factorial.jar Manifest.txt Factorial.class TestFactorial.class'
+                bat 'jar cfm Factorial.jar Manifest.txt Factorial.class TestFactorial.class'
             }
         }
         stage('Archive Jar'){
