@@ -18,12 +18,12 @@ pipeline{
         }
         stage('Package Jar'){
             steps{
-                bat 'jar cfm factorial.jar Manifest.txt Factorial.java'
+                bat 'jar cfm Factorial.jar Manifest.txt Factorial.class'
             }
         }
         stage('Archive Jar'){
             steps{
-                bat 'archive Artifacts artifacts: factorial.jar'
+                bat 'archive Artifacts artifacts: Factorial.jar'
             }
 
         }
