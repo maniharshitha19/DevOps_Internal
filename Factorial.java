@@ -9,4 +9,8 @@ public class Factorial {
         }
         return result;
     }
+    public static void main(String args[]){
+        Factorial factorial = new Factorial();
+        System.out.println("Factorial of 5 is: "+ factorial.factorial(5) );
+    }
 }
