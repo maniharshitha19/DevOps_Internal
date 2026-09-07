@@ -23,7 +23,7 @@ pipeline{
         }
         stage('Archive Jar'){
             steps{
-                archive Artifacts artifacts: 'Factorial.jar'
+                archiveArtifacts artifacts: 'Factorial.jar', fingerprint: true
             }
 
         }
