@@ -11,7 +11,7 @@ public class Factorial {
     }
     public static void main(String args[]){
         Factorial factorial = new Factorial();
-        System.out.println("Factorial of 5 is: "+ factorial.factorial(5) );
-        System.out.println("Factorial of 1 is: "+ factorial.factorial(1) );
+        System.out.println("Factorial of 5: "+ factorial.factorial(5) );
+        System.out.println("Factorial of 1: "+ factorial.factorial(1) );
     }
 }
